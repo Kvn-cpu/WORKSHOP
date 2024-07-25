@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Películas</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div>
+    <h1>Catálogo de Películas</h1>
+
+  
+    <label for="searchInput">Buscar:</label>
+    <input type="text" id="searchInput" placeholder="Buscar por título...">
+
+    <div id="movieContainer" class="catalog"></div>
+
+    <h2>Agregar Nueva Película</h2>
+    <form id="addMovieForm">
+      <label for="titleInput">Título:</label>
+      <input type="text" id="titleInput" required>
+
+      <label for="yearInput">Año:</label>
+      <input type="text" id="yearInput" required>
+
+      <label for="valueInput">Valoración:</label>
+      <input type="text" id="valueInput" required>
+
+      <label for="posterInput">URL del Póster:</label>
+      <input type="text" id="posterInput" required>
+
+      <label for="descriptionInput">Descripción:</label>
+      <textarea id="descriptionInput" required></textarea>
+
+      <button type="submit">Agregar Película</button>
+    </form>
+  </div>
+
+  <script type="module" src="./script/main.js"></script>
+</body>
+</html>
